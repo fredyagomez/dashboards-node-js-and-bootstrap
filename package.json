@@ -1,0 +1,43 @@
+{
+  "name": "Dashboards-nodejs-bootstrap",
+  "version": "0.0.1",
+  "description": "Back end code to setup login page, verify user, connect to data sources and send data to front end files",
+  "keywords": [
+    "dashboards",
+    "express",
+    "passport"
+  ],
+  "author": "Fredy A Gomez",
+  "license": "Unlicense",
+  "homepage": "https://github.com/fredyagomez",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fredyagomez/dashboards-nodejs-bootstrap.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fredyagomez/dashboards-nodejs-bootstrap/issues"
+  },
+  "dependencies": {
+    "body-parser": "1.13.3",
+    "connect-ensure-login": "0.1.1",
+    "cookie-parser": "1.3.5",
+    "ejs": "2.3.3",
+    "express": "4.13.3",
+    "express-session": "1.11.3",
+    "morgan": "1.6.1",
+    "passport": "0.2.2",
+    "passport-local": "1.0.0",
+	"odbc": "1.2.1",
+	"inherits": "2.0.1",
+	"jquery": "2.2.1",
+	"jsdom": "8.1.0",
+	"mime-types": "2.1.10",
+	"ms": "0.7.1"
+  },
+  "maintainers": [
+    {
+      "name": "Fredy Gomez",
+      "email": "fredygomez1981@gmail.com"
+    }
+  ]
+}
