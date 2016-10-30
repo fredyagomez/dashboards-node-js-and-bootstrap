@@ -1,0 +1,158 @@
+html, body {
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	background: #fff;
+	margin: 0;
+	font-family: arial
+}
+a {
+	text-decoration: none
+}
+.container {
+	width: 100%;
+	margin: 0 auto;
+	padding-top: 220px;
+}
+#bar {
+	width: 100%;
+	height: 35px;
+	padding: 15px 0;
+	background: url(../img/drop-down-form/bar_blue.png) repeat-x;
+}
+#container {
+	width: 100%;
+	padding: 0 auto;
+	margin: 0 auto;
+}
+#dropdownContainer {
+	position: relative;
+	float: right;
+	font-size: 12px;
+	padding: 0px 20px 0px 20px;
+}
+#dropdownButton {
+	display: inline-block;
+	float: right;
+	background: #d2e0ea url(../img/drop-down-form/buttonbg.png) repeat-x;
+	border: 1px solid #899caa;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	position: relative;
+	z-index: 30;
+	cursor: pointer;
+}
+#dropdownButton span {
+	color: #445058;
+	font-size: 14px;
+	font-weight: bold;
+	text-shadow: 1px 1px #fff;
+	padding: 7px 29px 9px 20px;
+	background: url(../img/drop-down-form/dropdownArrow.png) no-repeat 140px 7px;
+	display: block
+}
+#dropdownButton:hover {
+	background: url(../img/drop-down-form/buttonbgHover.png) repeat-x;
+}
+#dropdownBox {
+	position: absolute;
+	top: 34px;
+	right: 0;
+	display: none;
+	z-index: 29;
+}
+#dropdownButton.active {
+	border-radius: 3px 3px 0 0;
+}
+#dropdownButton.active span {
+	background-position: 140px -76px;
+}
+#dropdownButton.active em {
+	position: absolute;
+	width: 100%;
+	height: 1px;
+	background: #d2e0ea;
+	bottom: -1px;
+}
+#dropdownForm {
+	width: 248px;
+	border: 1px solid #899caa;
+	border-radius: 3px 0 3px 3px;
+	-moz-border-radius: 3px 0 3px 3px;
+	margin-top: -1px;
+	background: #d2e0ea;
+	padding: 6px;
+}
+#dropdownForm fieldset {
+	margin: 0 0 12px 0;
+	display: block;
+	border: 0;
+	padding: 0;
+}
+fieldset#body {
+	background: #fff;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	padding: 10px 13px;
+	margin: 0;
+}
+#dropdownForm #checkbox {
+	width: auto;
+	margin: 1px 9px 0 0;
+	float: left;
+	padding: 0;
+	border: 0;
+ *margin:-3px 9px 0 0; /* IE7 Fix */
+}
+#body label {
+	color: #3a454d;
+	margin: 9px 0 0 0;
+	display: block;
+	float: left;
+}
+#dropdownForm #body fieldset label {
+	display: block;
+	float: none;
+	margin: 0 0 6px 0;
+}
+#dropdownForm input, #dropdownForm select {
+	width: 92%;
+	border: 1px solid #899caa;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	color: #3a454d;
+	font-weight: bold;
+	padding: 8px 8px;
+	box-shadow: inset 0px 1px 3px #bbb;
+	-webkit-box-shadow: inset 0px 1px 3px #bbb;
+	-moz-box-shadow: inset 0px 1px 3px #bbb;
+	font-size: 12px;
+}
+#dropdownForm #dropdown {
+	width: auto;
+	float: left;
+	background: #339cdf url(../img/drop-down-form/dropdownbuttonbg.png) repeat-x;
+	color: #fff;
+	padding: 7px 10px 8px 10px;
+	text-shadow: 0px -1px #278db8;
+	border: 1px solid #339cdf;
+	box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	margin: 0 12px 0 0;
+	cursor: pointer;
+ *padding:7px 2px 8px 2px; /* IE7 Fix */
+}
+#dropdownForm span {
+	text-align: center;
+	display: block;
+	padding: 7px 0 4px 0;
+}
+#dropdownForm span a {
+	color: #3a454d;
+	text-shadow: 1px 1px #fff;
+	font-size: 12px;
+}
+input:focus {
+	outline: none;
+}

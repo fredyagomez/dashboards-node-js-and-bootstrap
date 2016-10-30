@@ -1,0 +1,76 @@
+
+#gallery {
+	overflow:hidden;
+}
+.menu_btn {
+	float:center;
+	padding:0px 5px 15px 5px;
+	margin-bottom:20px;
+	line-height:25px;
+}
+#slides {
+	height:1200px;
+	overflow:hidden;
+}
+.slide {
+	float:left;
+}
+#menu {
+	padding-left:0px;
+	text-align:left;
+	height:45px;
+	/*clear:both;*/
+}
+ul {
+	margin: 0;
+	padding: 0;
+	float: left;
+	--font: bold 12px Arial;
+	width: 100%;
+	border: 1px solid #625e00;
+	border-width: 1px 0;
+	background: #00B388 url(img/blockdefault.gif) center center repeat-x;
+}
+li {
+	display: inline;
+}
+li.act a {
+	float: left;
+	color: white;
+	padding: 5px 10px 5px 10px;
+	text-decoration: none;
+	border-right: 1px solid white;
+}
+li a {
+	float: left;
+	color: white;
+	padding: 5px 10px 5px 10px;
+	text-decoration: none;
+	border-right: 1px solid white;
+}
+a img {
+	border:none;
+}
+#main {
+	margin-left:0px;
+	margin:0px auto;
+	text-align:center;
+	width:100%;
+}
+a, a:visited {
+	color: white;
+}
+a:hover, a:active {
+	color: white;
+	background: transparent url(img/blockactive.gif) center center repeat-x;
+}
+/* FIREFOX HOVER EVENT */
+a:focus, a:focus:hover  {
+	color: white;
+	background: transparent url(img/blockactive.gif) center center repeat-x;
+}
+p {
+	padding:10px;
+	text-align:center;
+}
+
