@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboards</title>
+    <!-- Bootstrap Styles-->
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <!-- FontAwesome Styles-->
+    <link href="css/font-awesome.css" rel="stylesheet" />
+	<!-- Custom Styles-->
+    <link href="css/custom-styles.css" rel="stylesheet" />
+    <!-- Google Fonts-->
+    <link href='css/sans.css' rel='stylesheet' type='text/css' />
+	<!-- TABLE STYLES-->
+    <link href="css/dataTables.bootstrap.css" rel="stylesheet" />
+	<style>
+	body {
+		background-color: #f7f7f7;
+	}
+	.menucell{
+		background-color: #767676; 
+		font-family: 'HPSimplified',Arial, sans-serif; 
+		font-size: 14px; 
+		color: #ffffff; 
+		text-shadow: black 0.1em 0.1em 0.2em;
+		text-align:center;
+	}
+	.menucell:hover{
+		background-color: #E5E8E8; 
+	}
+	#hpnav  {
+		/*height: 36px;*/
+	
+
+	}
+	#hpnav a {
+		font-family: 'HPSimplified',Arial, sans-serif; 
+		font-size: 14px; 
+		color: #ffffff; 
+	}
+	#hpnav a:hover {
+		font-family:'HPSimplified',Arial, sans-serif; 
+		font-size: 14px; 
+		background-color: #E5E8E8; 
+		color: #32322F; 
+		text-shadow: white 0.1em 0.1em 0.2em;
+	}
+	</style>
+</head>
+<% if (!user) { %>
+	<p>Welcome! Please <a href="/login">log in</a>.</p>
+<% } else { %>
+<body>
+	<div id="rslt">
+	</div>
+    <div id="wrapper" style="background-color: #f7f7f7;">
+            <div id="page-inner">
+                <div class="row" style="background-color: #f7f7f7;">
+					<div class="col-md-9 col-sm-12 col-xs-12">
+                        <h1 class="page-header">
+                            Dashboards
+                        </h1>
+						<div class="table-responsive">
+                            <table class="table" id="hpnav">
+                                <thead>
+                                    <tr>
+                                        <th style="font-family: 'HPSimplified',Arial, sans-serif; font-size:22px;background:#00B388; color:White;">Financials</th>
+                                        <th class="menucell"><a href="http://ent51.sharepoint.hp.com/teams/entsvc/ops/dashboards/SitePages/Home.aspx" target="_blank">Trending</a></th>
+                                        <th class="menucell"><a href="http://ent51.sharepoint.hp.com/teams/entsvc/ops/dashboards/SitePages/Home.aspx" target="_blank">Detail</a></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td style="margin-top: 2px; font-family: 'HPSimplified', arial; font-size: 12px; border: 1.5px solid #a3a6aa; color:#00B388;">Note 1</td>
+                                        <td style="margin-top: 2px; font-family: 'HPSimplified', arial; font-size: 12px; border: 1.5px solid #a3a6aa; color:#00B388;">Note 2</td>
+                                        <td style="margin-top: 2px; font-family: 'HPSimplified', arial; font-size: 12px; border: 1.5px solid #a3a6aa; color:#00B388;">Note 3</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+     
+					</div>
+					<div class="col-md-3 col-sm-12 col-xs-12" style="background-color: #f7f7f7;">
+						<text>Hello, Welcome <b> <%= user.username %>.</b> <a href="/logout">Log out</a>
+						<img class="img-responsive" src="img/Logo.png" alt="logo" style="width:330px;height:122px;">
+					</div>
+                </div>
+                <!-- /. ROW  -->
+				<div class="row" style="background-color: #f7f7f7;">
+					<div class="col-md-9 col-sm-12 col-xs-12"><br/>
+						<div class="col-md-3 col-sm-12 col-xs-12">
+							<div class="panel panel-primary text-center no-boder bg-color-green">
+								<div style="background-color: rgb(255, 255, 255); border: 1px solid gray; border-radius: 6px;">
+									<div style="margin-top: 5px; margin-left: 10px; text-align: left;">
+										<span style="color: rgb(0, 76, 118); white-space: normal;font-size: 14px; font-weight: bold;  margin-top: 20px;">Annual Revenue</span><br>
+										<span style="color: rgb(0, 0, 0); font-size: 36px; line-height: 44px;font-weight: bold;">$161,950,283</span><br>
+										<span style="color: rgb(128, 128, 128); font-size: 12px;font-weight: bold;">Annual Revenue:$181,168,732</span><br>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-12 col-xs-12">
+							<div class="panel panel-primary text-center no-boder bg-color-blue">
+								<div style="background-color: rgb(255, 255, 255); border: 1px solid gray; border-radius: 6px;">
+									<div style="margin-top: 5px; margin-left: 10px; text-align: left;">
+										<span style="color: rgb(0, 76, 118); white-space: normal;font-size: 14px; font-weight: bold;  margin-top: 20px;">Annual Expense</span><br>
+										<span style="color: rgb(0, 0, 0); font-size: 36px; line-height: 44px;font-weight: bold;">($120,276,949)</span><br>
+										<span style="color: rgb(128, 128, 128); font-size: 12px;font-weight: bold;">Annual Revenue:$181,168,732</span><br>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-12 col-xs-12">
+							<div class="panel panel-primary text-center no-boder bg-color-red">
+								<div style="background-color: rgb(255, 255, 255); border: 1px solid gray; border-radius: 6px;">
+									<div style="margin-top: 5px; margin-left: 10px; text-align: left;">
+										<span style="color: rgb(0, 76, 118); white-space: normal;font-size: 14px; font-weight: bold;  margin-top: 20px;">Annual Profit</span><br>
+										<span style="color: rgb(0, 0, 0); font-size: 36px; line-height: 44px;font-weight: bold;">$41,673,334</span><br>
+										<span style="color: rgb(128, 128, 128); font-size: 12px;font-weight: bold;">Annual Budget Profit:$49,343,636</span><br>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-12 col-xs-12">
+							<div class="panel panel-primary text-center no-boder bg-color-brown">
+								<div style="background-color: rgb(255, 255, 255); border: 1px solid gray; border-radius: 6px;">
+									<div style="margin-top: 5px; margin-left: 10px; text-align: left;">
+										<span style="color: rgb(0, 76, 118); white-space: normal;font-size: 14px; font-weight: bold;  margin-top: 20px;">Annual Profit %</span><br>
+										<span style="color: rgb(0, 0, 0); font-size: 36px; line-height: 44px;font-weight: bold;">25.73%</span><br>
+										<span style="color: rgb(128, 128, 128); font-size: 12px;font-weight: bold;">Annual Budget Profit %:27.24%</span><br>
+									</div>
+								</div>
+						
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-12 col-xs-12">
+						<div class="panel panel-default">
+							<div class="panel-heading"><center>
+								Global Filter </center>
+							</div>
+							<br/>
+							<button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal" style="width:250px;">
+								Client Name : <%= client_name %>
+							</button>
+							<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+											<h4 class="modal-title" id="myModalLabel">Client Name</h4>
+										</div>
+										<form id="dropdownForm" action="" method="GET">
+											<div class="form-group">
+												<label for="client_name"><span style="color:black;">&nbsp &nbsp Client Name</span></label>
+												<!-- <select name="client_name[]" multiple="" class="form-control"> -->
+												<select name="client_name" class="form-control">													
+												<% for(var i=0; i<data1.length; i++) { %>											
+													<option value="<%= data1[i] %>"><%= data1[i] %></option>													
+												<% } %>													
+												</select>												
+											</div>
+				
+											
+											<input type="submit" class="btn btn-primary" id="dropdown" name="submit_form" value="Submit">
+											
+										</form>	
+									</div>
+								</div>
+							</div>
+							<br/>
+							<br/>					
+							<button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal2" style="width:250px;">
+								Region : <b></b>
+							</button>
+							<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+											<h4 class="modal-title" id="myModalLabel2">ESMH Region</h4>
+										</div>
+										<form id="dropdownForm" action="" method="GET">
+											<div class="form-group">
+												<label for="esmh_region"><span style="color:black;">ESMH Region</span></label>
+												<select name="esmh_region" multiple="" class="form-control">
+					
+												</select>
+											</div>
+											<input type="hidden" name="client_name" value="<%= client_name %>" />
+											<input type="submit" class="btn btn-default" id="dropdown" name="submit_form" value="Submit">
+											<input type="hidden" name="action" value="" />
+											<input type="hidden" name="actionb" value="" />
+											<input type="hidden" name="actionp" value="" />
+											
+										</form>	
+									</div>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+                </div>
+				<div class="row" style="background-color: #f7f7f7;">
+					<div class="col-md-9 col-sm-12 col-xs-12">
+						<div class="panel panel-default">				
+							<div class="panel-body">
+								<ul class="nav nav-tabs">
+									<li class="active"><a href="#home" data-toggle="tab">Summary</a>
+									</li>
+									<li class=""><a href="#profile" data-toggle="tab">Revenue</a>
+									</li>
+									<li class=""><a href="#messages" data-toggle="tab">Expenses</a>
+									</li>
+								</ul>
+								<div class="tab-content">
+									<div class="tab-pane fade active in" id="home">
+										<h4>Summary</h4>
+										<p>The Financial Summary presents an overview of the main KPI that drives revenue and expenses. For a more detailed picture please refer to the tabs</p>
+											<div class="panel panel-default">  
+												<div class="panel-heading">
+													Financial Trending
+												</div>
+												<div class="panel-body">		
+													<iframe id="iframe1" src="http://localhost:1720/chart?client_name=<%= client_name %>" width="100%" height="580" frameborder="0" scrolling="yes";"></iframe>
+												</div>
+											</div> 											
+									</div>
+									<div class="tab-pane fade" id="profile">
+										<h4>Revenue</h4>
+										<p>The Financial Summary presents an overview of the main KPI that drives revenue and expenses. For a more detalied picture please refer to the respective tab</p>
+											<div class="panel panel-default">
+												<div class="panel-heading">
+													Financial Trending
+												</div>
+												<div class="panel-body">
+												</div>
+											</div>										
+									</div>
+									<div class="tab-pane fade" id="messages">
+										<h4>Expenses</h4>
+										<p>The Financial Summary presents an overview of the main KPI that drives revenue and expenses. For a more detalied picture please refer to the respective tab</p>
+										<div class="col-md-9 col-sm-12 col-xs-12">
+											<div class="panel panel-default">
+												<div class="panel-heading">
+													Bar Chart Example
+												</div>
+												<div class="panel-body">
+										
+												</div>
+											</div>
+										</div>
+										<div class="col-md-3 col-sm-12 col-xs-12">
+											<div class="panel panel-default">
+												<div class="panel-heading">
+													Donut Chart Example
+												</div>
+												<div class="panel-body">
+													<div id="morris-donut-chart"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>						
+					</div>				
+				 <!--  Modals-->
+					
+                <!-- End Modals-->
+				</div>
+                <div class="row" style="background-color: #f7f7f7;">	
+                </div>
+                <div class="row" style="background-color: #f7f7f7;">
+                       <div class="panel panel-default">
+                            <div class="panel-heading">
+                                Summary Table
+                            </div> 
+                            <div class="panel-body">
+                            <div class="table-responsive">
+                                <table class="table table-striped table-bordered table-hover" id="dataTables-example">
+                                    <thead>
+                                        <tr>
+                                            <th>Date</th>
+                                            <th>Amount</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+									<% for(var i=0; i<datatable.length; i++) { %>											
+										<tr class="gradeA"><td><%= datatable[i] %></td><td><%= datatable1[i] %></td></tr>													
+									<% } %>		
+                                    </tbody>
+                                </table>
+                            </div>
+                            
+                        </div>
+                    </div>
+                 <!--   </div>    -->
+                </div>			
+            </div>
+            <!-- /. PAGE INNER  -->
+        <!--</div> -->
+        <!-- /. PAGE WRAPPER  -->
+    </div>
+    <!-- /. WRAPPER  -->
+    <!-- JS Scripts-->
+    <!-- jQuery Js -->
+    <script src="js/jquery-1.10.2.js"></script>
+    <!-- Bootstrap Js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Metis Menu Js -->
+    <script src="js/jquery.metisMenu.js"></script>
+	<!-- Custom Js -->
+	<!-- DATA TABLE SCRIPTS -->
+    <script src="js/jquery.dataTables.js"></script>
+    <script src="js/dataTables.bootstrap.js"></script>
+    <script>
+            $(document).ready(function () {
+                $('#dataTables-example').dataTable();
+            });
+    </script>
+	
+	<script type="text/javascript">
+    function setData()
+    {
+        var frame = document.getElementById('iframe1');
+        var checkboxes = frame.contentWindow.document.getElementsByName('action');
+		checkboxes.checked = true;
+    }
+	</script>
+</body>
+<% } %>
+</html>
