@@ -1,8 +1,7 @@
-This example demonstrates how to create a dashboard using nodejs to run the back end files
-and bootstrap for the visualization part. See live example here [Live Dashboard] (http://54.201.121.249:1720) 
+This example demonstrates how to create a simple dashboard using node js in the server side and
+bootstrap and other JS visualization libraries. See live example here [Live Dashboard] (http://54.201.121.249:1720) 
 This comes with a component to authenticate users using a username and
 password with [form-based authentication](https://en.wikipedia.org/wiki/HTTP%2BHTML_form-based_authentication).
-
 
 ## Instructions
 
